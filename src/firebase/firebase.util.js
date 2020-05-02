@@ -27,7 +27,6 @@ import 'firebase/auth';
     if (!snapShop.exists) {
         const { displayName, email } = userAuth;
         const createdAt = new Date();
-        console.log(`AdditionalData: ${additionalData}`);
         try {
             await userRef.set({
                 displayName,
